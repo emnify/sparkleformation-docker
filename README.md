@@ -16,13 +16,12 @@ $ docker run \
 
 Making above a shell alias allows to work as follows:
 
-```shell
-$ export AWS_REGION=...
-$ alias sparkle="docker run -e AWS_REGION -e AWS_SECRET_ACCESS_KEY -e AWS_ACCESS_KEY_ID -v ~/src/cloudformation/staging:/work emnify/sparkleformation"
-$ sparkle list
-Name                                       Created                   Updated                   Status               Template Description
-some-stack                                 2017-06-19 05:21:39 UTC   2017-09-21 08:34:44 UTC   UPDATE_COMPLETE      Some Example stack
-```
+
+    $ export AWS_REGION=...
+    $ alias sparkle="docker run -e AWS_REGION -e AWS_SECRET_ACCESS_KEY -e AWS_ACCESS_KEY_ID -v ~/src/cloudformation/staging:/work emnify/sparkleformation"
+    $ sparkle list
+    Name                                       Created                   Updated                   Status               Template Description
+    some-stack                                 2017-06-19 05:21:39 UTC   2017-09-21 08:34:44 UTC   UPDATE_COMPLETE      Some Example stack
 
 
 
